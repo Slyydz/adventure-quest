@@ -17,6 +17,16 @@ namespace adventure_quest
 
             Console.Write("What is your name adventurer?: ");
             string userName = Console.ReadLine();
+            var colorList = new List<string>()
+            {
+                "Red", "Yellow", "Green"
+            };
+
+            Robe userRobe = new Robe(colorList, 10);
+
+            Adventurer theAdventurer = new Adventurer(userName, userRobe);
+
+            theAdventurer.getDescrip();
 
             Challenge twoPlusTwo = new Challenge("2 + 2?", 4, 10);
             Challenge theAnswer = new Challenge(
@@ -45,9 +55,6 @@ namespace adventure_quest
             //  If an Adventurer has an Awesomeness less than the min, they are terrible
             int minAwesomeness = 0;
             int maxAwesomeness = 100;
-
-            // Make a new "Adventurer" object using the "Adventurer" class
-            Adventurer theAdventurer = new Adventurer(userName);
 
             // A list of challenges for the Adventurer to complete
             // Note we can use the List class here because have the line "using System.Collections.Generic;" at the top of the file.

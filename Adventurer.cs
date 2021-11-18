@@ -1,3 +1,5 @@
+using System;
+
 namespace adventure_quest
 {
     // An instance of the Adventurer class is an object that will undergo some challenges
@@ -8,15 +10,17 @@ namespace adventure_quest
         // Note: the constructor is defined below.
         public string Name { get; }
 
+        public Robe ColorfulRobe { get; }
         // This is a mutable property it has a "get" and a "set"
         //  So it can be read and changed by any code in the application
         public int Awesomeness { get; set; }
 
         // A constructor to make a new Adventurer object with a given name
-        public Adventurer(string name)
+        public Adventurer(string name, Robe robeInput)
         {
             Name = name;
             Awesomeness = 50;
+            ColorfulRobe = robeInput;
         }
 
 
@@ -44,6 +48,11 @@ namespace adventure_quest
             }
 
             return $"Adventurer, {Name}, is {status}";
+        }
+
+        public void getDescrip()
+        {
+            Console.WriteLine($"{Name} has a {ColorfulRobe.Colors[0]} robe that is {ColorfulRobe.Length} inches long.");
         }
     }
 }
