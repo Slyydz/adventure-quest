@@ -24,7 +24,9 @@ namespace adventure_quest
 
             Robe userRobe = new Robe(colorList, 10);
 
-            Adventurer theAdventurer = new Adventurer(userName, userRobe);
+            Hat userHat = new Hat(7);
+
+            Adventurer theAdventurer = new Adventurer(userName, userRobe, userHat);
 
             theAdventurer.getDescrip();
 
