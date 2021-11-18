@@ -41,6 +41,10 @@ namespace adventure_quest
             int randomNumber = new Random().Next() % 10;
             Challenge guessRandom = new Challenge("What number am I thinking of?", randomNumber, 25);
 
+            Challenge guessEmpire = new Challenge("How tall is the Empire State Building (feet)?", 1454, 50);
+
+            Challenge guessAlligator = new Challenge("How long is the largest Alligator recorded? (feet)?", 19, 15);
+
             Challenge favoriteBeatle = new Challenge(
                 @"Who's your favorite Beatle?
     1) John
@@ -68,14 +72,34 @@ namespace adventure_quest
                 theAnswer,
                 whatSecond,
                 guessRandom,
-                favoriteBeatle
+                favoriteBeatle,
+                guessEmpire,
+                guessAlligator
             };
 
             // Loop through all the challenges and subject the Adventurer to them
             string keepGoing = "";
             while (keepGoing != "n")
             {
-                foreach (Challenge challenge in challenges)
+                var indexes = new List<int> { };
+                var challengesRandom = new List<Challenge> { };
+
+                while (indexes.Count < 5)
+                {
+                    Random randInt = new Random();
+                    int candidate = randInt.Next(1, challenges.Count);
+                    if (!indexes.Contains(candidate))
+                    {
+                        indexes.Add(candidate);
+                    }
+                }
+
+                foreach (var item in indexes)
+                {
+                    challengesRandom.Add(challenges[item]);
+                }
+
+                foreach (Challenge challenge in challengesRandom)
                 {
                     challenge.RunChallenge(theAdventurer);
                 }
