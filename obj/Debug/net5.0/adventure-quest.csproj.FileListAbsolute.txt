@@ -1,0 +1,16 @@
+C:\Users\willi\workspace\back-end\adventure-quest\bin\Debug\net5.0\adventure-quest.exe
+C:\Users\willi\workspace\back-end\adventure-quest\bin\Debug\net5.0\adventure-quest.deps.json
+C:\Users\willi\workspace\back-end\adventure-quest\bin\Debug\net5.0\adventure-quest.runtimeconfig.json
+C:\Users\willi\workspace\back-end\adventure-quest\bin\Debug\net5.0\adventure-quest.runtimeconfig.dev.json
+C:\Users\willi\workspace\back-end\adventure-quest\bin\Debug\net5.0\adventure-quest.dll
+C:\Users\willi\workspace\back-end\adventure-quest\bin\Debug\net5.0\ref\adventure-quest.dll
+C:\Users\willi\workspace\back-end\adventure-quest\bin\Debug\net5.0\adventure-quest.pdb
+C:\Users\willi\workspace\back-end\adventure-quest\obj\Debug\net5.0\adventure-quest.csproj.AssemblyReference.cache
+C:\Users\willi\workspace\back-end\adventure-quest\obj\Debug\net5.0\adventure-quest.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\willi\workspace\back-end\adventure-quest\obj\Debug\net5.0\adventure-quest.AssemblyInfoInputs.cache
+C:\Users\willi\workspace\back-end\adventure-quest\obj\Debug\net5.0\adventure-quest.AssemblyInfo.cs
+C:\Users\willi\workspace\back-end\adventure-quest\obj\Debug\net5.0\adventure-quest.csproj.CoreCompileInputs.cache
+C:\Users\willi\workspace\back-end\adventure-quest\obj\Debug\net5.0\adventure-quest.dll
+C:\Users\willi\workspace\back-end\adventure-quest\obj\Debug\net5.0\ref\adventure-quest.dll
+C:\Users\willi\workspace\back-end\adventure-quest\obj\Debug\net5.0\adventure-quest.pdb
+C:\Users\willi\workspace\back-end\adventure-quest\obj\Debug\net5.0\adventure-quest.genruntimeconfig.cache
