@@ -26,6 +26,8 @@ namespace adventure_quest
 
             Hat userHat = new Hat(7);
 
+            Prize finalPrize = new Prize("*");
+
             Adventurer theAdventurer = new Adventurer(userName, userRobe, userHat);
 
             theAdventurer.getDescrip();
@@ -91,7 +93,8 @@ namespace adventure_quest
                 {
                     Console.WriteLine("I guess you did...ok? ...sorta. Still, you should get out of my sight.");
                 }
-
+                Console.WriteLine();
+                finalPrize.ShowPrize(theAdventurer);
                 Console.WriteLine();
                 Console.Write("Do you wish to play again? (Y/N): ");
                 keepGoing = Console.ReadLine().ToLower();
